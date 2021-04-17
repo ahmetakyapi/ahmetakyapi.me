@@ -1,8 +1,11 @@
 import { getMdxNode, getMdxPaths } from 'next-mdx/server'
 import { useHydrate } from 'next-mdx/client'
 import { mdxComponents } from '../../components/mdx-components'
+import { useAuth0 } from '@auth0/auth0-react'
 
 export default function PostPage({ post }) {
+  const { loginWithRedirect, logout, isAuthenticated, user } = useAuth0()
+
   const content = useHydrate(post, {
     components: mdxComponents
   })
@@ -16,6 +19,38 @@ export default function PostPage({ post }) {
 
         <div className="prose">{content}</div>
       </article>
+
+      <form className="mt-10">
+        <textarea
+          rows="3"
+          className="border border-green-400 w-full block px-2 py-1"
+        />
+        <div className="mt-4">
+          {isAuthenticated ? (
+            <div className="flex items-center space-x-2">
+              <button className="bg-green-400 text-white px-2 py-1 rounded">
+                Gönder
+              </button>
+              <img src={user.picture} width={30} className="rounded-full" />
+              <span className="text 2xl:bg-indigo-50 font-bold">
+                {user.name}
+              </span>
+              <button
+                typeof="button"
+                onClick={() =>
+                  logout({ returnTo: process.env.NEXT_PUBLIC_URL })
+                }
+              >
+                <p className="text-indigo-500 font-bold">Çıkış Yap</p>
+              </button>
+            </div>
+          ) : (
+            <button typeof="button" onClick={() => loginWithRedirect()}>
+              <p className="text-indigo-500 font-bold">Giriş Yap</p>
+            </button>
+          )}
+        </div>
+      </form>
     </div>
   )
 }
