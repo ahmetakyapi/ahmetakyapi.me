@@ -70,7 +70,7 @@ export default function PostPage({ post }) {
               <button
                 typeof="button"
                 onClick={() =>
-                  logout({ returnTo: process.env.NEXT_PUBLIC_URL })
+                  logout({ returnTo: process.env.NEXT_PUBLIC_URL + '/blog' })
                 }
               >
                 <p className="text-indigo-500 font-bold">Çıkış Yap</p>
