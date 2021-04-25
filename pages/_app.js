@@ -5,7 +5,7 @@ import { Auth0Provider } from '@auth0/auth0-react'
 function MyApp({ Component, pageProps }) {
   return (
     <Auth0Provider
-      domain="ahmetakyapi.eu.auth0.com"
+      domain={process.env.NEXT_PUBLIC_AUTH0_DOMAIN}
       clientId="coBT0nfmgwc0JXK5ZeB5XvPwh7bfB4At"
       redirectUri={process.env.NEXT_PUBLIC_URL}
     >
