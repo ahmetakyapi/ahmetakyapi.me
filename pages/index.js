@@ -20,19 +20,31 @@ function HomePage() {
           </h3>
 
           <div className="site-container flex items-center mt-auto">
-            <a href="https://twitter.com/ahmetakyapi">
+            <a
+              className="site-container"
+              href="https://twitter.com/ahmetakyapi"
+            >
               <img className="site-container" src="/twitter.png" alt="" />{' '}
             </a>
-            <a href="https://www.instagram.com/ahmetakyapi">
+            <a
+              className="site-container"
+              href="https://www.instagram.com/ahmetakyapi"
+            >
               <img className="site-container" src="/instagram.png" alt="" />{' '}
             </a>
-            <a href="https://github.com/ahmetakyapi">
+            <a className="site-container" href="https://github.com/ahmetakyapi">
               <img className="site-container" src="/github.png" alt="" />{' '}
             </a>
-            <a href="https://tr.linkedin.com/in/ahmet-akyap%C4%B1-ba9911193">
+            <a
+              className="site-container"
+              href="https://tr.linkedin.com/in/ahmet-akyap%C4%B1-ba9911193"
+            >
               <img className="site-container" src="/linkedin.png" alt="" />{' '}
             </a>
-            <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlDTckLTCgBcQJfFScTNkNzRlWBTcrPvfQCkJpjkbkhLgqxZwWxwLGBNcdKGPscsZVtfsV">
+            <a
+              className="site-container"
+              href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlDTckLTCgBcQJfFScTNkNzRlWBTcrPvfQCkJpjkbkhLgqxZwWxwLGBNcdKGPscsZVtfsV"
+            >
               <img className="site-container" src="/gmail.png" alt="" />{' '}
             </a>
           </div>
