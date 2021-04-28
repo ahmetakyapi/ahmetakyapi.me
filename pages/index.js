@@ -3,24 +3,43 @@ function HomePage() {
     <>
       <div className="site-container">
         <div className="space-y-4">
-          <h1 className="text-2xl font-bold">
-            Ben Ahmet Akyapı. Bilgisayar Mühendisliği Öğrencisiyim.
+          <h1 className="text-2xl font-bold">Ben Ahmet Akyapı</h1>
+          <h1 className="text-2xl font-medium">
+            Bilgisayar Mühendisliği Öğrencisiyim.
           </h1>
-
-          <p>
+          <p className="font-medium">
             Web tabanlı uygulamalar gelişmekte ve çeşitli projeler
             oluşturmaktayım.
           </p>
-
-          <p>
+          <p className="font-medium">
             Burada projelerimi paylaşıp, yaptığım veya yapacağım içerikler
-            hakkında bilgileri paylaşacağım. Aşağıdaki linklerden bana
-            ulaşabilirsiniz.
+            hakkında bilgilerimi paylaşacağım.
           </p>
+          <h3 className="font-medium">
+            Aşağıdaki linklerden bana ulaşabilirsiniz.
+          </h3>
+
+          <div className="flex items-center space-x-7">
+            <a href="https://twitter.com/ahmetakyapi">
+              <img className="site-container" src="/twitter.png" alt="" />{' '}
+            </a>
+            <a href="https://www.instagram.com/ahmetakyapi">
+              <img className="site-container" src="/instagram.png" alt="" />{' '}
+            </a>
+            <a href="https://github.com/ahmetakyapi">
+              <img className="site-container" src="/github.png" alt="" />{' '}
+            </a>
+            <a href="https://tr.linkedin.com/in/ahmet-akyap%C4%B1-ba9911193">
+              <img className="site-container" src="/linkedin.png" alt="" />{' '}
+            </a>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlDTckLTCgBcQJfFScTNkNzRlWBTcrPvfQCkJpjkbkhLgqxZwWxwLGBNcdKGPscsZVtfsV">
+              <img className="site-container" src="/gmail.png" alt="" />{' '}
+            </a>
+          </div>
         </div>
       </div>
 
-      <div className="site-4xl-container mt-20">
+      <div className="site-4xl-container my-8">
         <img src="/i-am.jpeg" alt="" />
       </div>
     </>

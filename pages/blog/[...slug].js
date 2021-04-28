@@ -3,17 +3,30 @@ import { useHydrate } from 'next-mdx/client'
 import { mdxComponents } from '../../components/mdx-components'
 import { useAuth0 } from '@auth0/auth0-react'
 import { useState, useEffect } from 'react'
+import Form from '../../components/form'
+import { DateTime } from 'luxon'
+import Comments from '../../components/comments'
 
 export default function PostPage({ post }) {
-  const {
-    loginWithRedirect,
-    logout,
-    isAuthenticated,
-    user,
-    getAccessTokenSilently
-  } = useAuth0()
+  const { getAccessTokenSilently } = useAuth0()
   const [text, textSet] = useState('')
   const [url, urlSet] = useState(null)
+  const [comments, commentsSet] = useState([])
+
+  const fetchComment = async () => {
+    const query = new URLSearchParams({ url })
+    const newUrl = `/api/comment?${query.toString()}`
+    const response = await fetch(newUrl, {
+      method: 'GET'
+    })
+    const data = await response.json()
+    commentsSet(data)
+  }
+
+  useEffect(() => {
+    if (!url) return
+    fetchComment()
+  }, [url])
 
   useEffect(() => {
     const url = window.location.origin + window.location.pathname
@@ -26,19 +39,17 @@ export default function PostPage({ post }) {
 
   const onSubmit = async (e) => {
     e.preventDefault()
-
     const userToken = await getAccessTokenSilently()
 
-    const response = await fetch('/api/comment', {
+    await fetch('/api/comment', {
       method: 'POST',
       body: JSON.stringify({ text, userToken, url }),
       headers: {
         'Content-Type': 'application/json'
       }
     })
-
-    const data = await response.json()
-    console.log(data)
+    fetchComment()
+    textSet('')
   }
 
   return (
@@ -51,41 +62,13 @@ export default function PostPage({ post }) {
         <div className="prose">{content}</div>
       </article>
 
-      <form className="mt-10" onSubmit={onSubmit}>
-        <textarea
-          rows="3"
-          className="border border-green-400 w-full block px-2 py-1"
-          onChange={(e) => textSet(e.target.value)}
-        />
-        <div className="mt-4">
-          {isAuthenticated ? (
-            <div className="flex items-center space-x-2">
-              <button className="bg-green-400 text-white px-2 py-1 rounded">
-                Gönder
-              </button>
-              <img src={user.picture} width={30} className="rounded-full" />
-              <span className="text 2xl:bg-indigo-50 font-bold">
-                {user.name}
-              </span>
-              <button
-                typeof="button"
-                onClick={() =>
-                  logout({ returnTo: process.env.NEXT_PUBLIC_URL })
-                }
-              >
-                <p className="text-indigo-500 font-bold">Çıkış Yap</p>
-              </button>
-            </div>
-          ) : (
-            <button typeof="button" onClick={() => loginWithRedirect()}>
-              <p className="text-indigo-500 font-bold">Giriş Yap</p>
-            </button>
-          )}
-        </div>
-      </form>
+      <Form onSubmit={onSubmit} textSet={textSet} text={text} />
+
+      <Comments comments={comments} />
     </div>
   )
 }
+
 export async function getStaticPaths() {
   return {
     paths: await getMdxPaths('post'),
