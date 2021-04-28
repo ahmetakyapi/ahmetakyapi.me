@@ -9,4 +9,7 @@
     .site-4xl-container {
     @apply max-w-4xl mx-auto px-6
     }
+    .flex items-center {
+        @apply max-w-4xl mx-auto px-6
+    }
 }
