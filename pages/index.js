@@ -19,7 +19,7 @@ function HomePage() {
             Aşağıdaki linklerden bana ulaşabilirsiniz.
           </h3>
 
-          <div className="flex items-center site-container">
+          <div className="site-container flex items-center mt-auto">
             <a href="https://twitter.com/ahmetakyapi">
               <img className="site-container" src="/twitter.png" alt="" />{' '}
             </a>
