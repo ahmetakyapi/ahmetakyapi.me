@@ -19,7 +19,7 @@ function HomePage() {
             Aşağıdaki linklerden bana ulaşabilirsiniz.
           </h3>
 
-          <div className="flex items-center space-x-7">
+          <div className="flex items-center">
             <a href="https://twitter.com/ahmetakyapi">
               <img className="site-container" src="/twitter.png" alt="" />{' '}
             </a>
@@ -39,7 +39,7 @@ function HomePage() {
         </div>
       </div>
 
-      <div className="site-4xl-container my-8">
+      <div className="site-4xl-container mt-10">
         <img src="/i-am.jpeg" alt="" />
       </div>
     </>
