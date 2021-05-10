@@ -7,5 +7,8 @@ Kullanılan Teknolojiler
 3. Upstash
 4. Auth0
 
+![Uploading 2.png…]()
+
+
 Denemek için demo: https://my-blog-tau-ten.vercel.app/
 
