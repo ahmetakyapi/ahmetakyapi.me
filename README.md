@@ -1,6 +1,7 @@
 ### Blog Sitesi Projesi
 
 Kullanılan Teknolojiler
+
 1.Next.js
 2.TailwindCss
 3.Upstash
