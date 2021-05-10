@@ -7,7 +7,8 @@ Kullanılan Teknolojiler
 3. Upstash
 4. Auth0
 
-![Uploading 2.png…]()
+<img width="1911" alt="2" src="https://user-images.githubusercontent.com/71101248/117726343-1efb0700-b1ef-11eb-9eb6-721aa5d23e39.png">
+
 
 
 Denemek için demo: https://my-blog-tau-ten.vercel.app/
