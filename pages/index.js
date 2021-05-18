@@ -8,7 +8,7 @@ function HomePage() {
             Bilgisayar Mühendisliği Öğrencisiyim.
           </h1>
           <p className="font-medium">
-            Web tabanlı uygulamalar gelişmekte ve çeşitli projeler
+            Web tabanlı uygulamalar geliştirmekte ve çeşitli projeler
             oluşturmaktayım.
           </p>
           <p className="font-medium">
