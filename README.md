@@ -11,5 +11,5 @@ Kullanılan Teknolojiler
 
 
 
-Denemek için demo: https://my-blog-tau-ten.vercel.app/
+Denemek için demo: https://my-blog-ahmetakyapi.vercel.app
 
