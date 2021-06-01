@@ -13,3 +13,16 @@ Kullanılan Teknolojiler
 
 #### Denemek için demo: https://my-blog-ahmetakyapi.vercel.app
 
+## Installation
+
+Öncelikle projeyi clonelayın.
+
+```bash
+git clone https://github.com/ahmetakyapi/myBlog.git
+```
+Daha sonra projeyi kurup, başlatın.
+```bash
+yarn install
+yarn start
+```
+
