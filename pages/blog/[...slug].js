@@ -55,7 +55,7 @@ export default function PostPage({ post }) {
   return (
     <div className="site-container">
       <article>
-        <h1 className="text-4xl font-bold">{post.frontMatter.title}</h1>
+        <h1 className="text-4xl font-bold my-3">{post.frontMatter.title}</h1>
         <p>{post.frontMatter.excerpt}</p>
         <hr className="my-4" />
 
