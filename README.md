@@ -11,7 +11,7 @@ Kullanılan Teknolojiler
 
 
 
-#### Denemek için demo: https://my-blog-ahmetakyapi.vercel.app
+#### Denemek için demo: https:/ahmetakyapi.me
 
 ## Installation
 
