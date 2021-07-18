@@ -11,7 +11,7 @@ Kullanılan Teknolojiler
 
 
 
-#### Denemek için demo: https:/ahmetakyapi.me
+#### Denemek için demo: https://ahmetakyapi.me
 
 ## Installation
 
