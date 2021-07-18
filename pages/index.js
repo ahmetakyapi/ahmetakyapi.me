@@ -7,9 +7,9 @@ function HomePage() {
           <h1 className="text-xl font-bold"> Frontend Developer</h1>
           <p className="font-medium">
             {' '}
-            İstanbul'da yaşıyorum. Front-end teknolojileriyle ilgileniyorum..
-            Yeni teknolojileri deneyip, yeni şeyler üretmeye çalışıyorum.
-            Yaptığım projeleri Github üzerinden paylaşıyorum.{' '}
+            İstanbul'da yaşıyorum. Front-end teknolojileriyle ilgileniyorum.
+            Yeni teknolojileri deneyip, yeni şeyler üretmeyi seviyorum. Yaptığım
+            projeleri Github üzerinden paylaşıyorum.{' '}
           </p>
           <p className="font-medium">
             Burada fikirlerimi paylaşıp, yaptığım veya yapacağım içerikler
