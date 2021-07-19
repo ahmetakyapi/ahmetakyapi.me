@@ -64,5 +64,10 @@
     .card:hover h3, .card:focus-within h3 {
         padding: 8px 12px 0;
     }
+    @media screen and (max-width: 768px) {
+    .card {
+        margin: auto;
+     }
+    }
 }
 /* Projects card css end*/
