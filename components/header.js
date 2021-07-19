@@ -10,6 +10,9 @@ export default function Header() {
         <Link href="/blog">
           <a className="text-blue-900 font-bold">Blog</a>
         </Link>
+        <Link href="/projects">
+          <a className="text-blue-900 font-bold">Projeler</a>
+        </Link>
       </nav>
     </header>
   )
