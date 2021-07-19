@@ -9,13 +9,13 @@ export default function Header() {
             Hakkımda
           </a>
         </Link>
-        <Link href="/blog">
-          <a className="text-blue-900 font-bold hover:text-gray-400">Blog</a>
-        </Link>
         <Link href="/projects">
           <a className="text-blue-900 font-bold hover:text-gray-400">
             Projeler
           </a>
+        </Link>
+        <Link href="/blog">
+          <a className="text-blue-900 font-bold hover:text-gray-400">Blog</a>
         </Link>
       </nav>
     </header>
