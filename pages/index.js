@@ -34,7 +34,7 @@ function HomePage() {
             <img src="/linkedin.png" alt="" />{' '}
           </a>
           <a
-            className="mx-4 w-11"
+            className="mx-4 w-11 "
             href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlDTckLTCgBcQJfFScTNkNzRlWBTcrPvfQCkJpjkbkhLgqxZwWxwLGBNcdKGPscsZVtfsV"
           >
             <img src="/gmail.png" alt="" />{' '}
