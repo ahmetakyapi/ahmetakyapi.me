@@ -15,41 +15,31 @@ function HomePage() {
             Burada fikirlerimi paylaşıp, yaptığım veya yapacağım içerikler
             hakkında bilgilerimi paylaşacağım.
           </p>
-          <h3 className="font-medium mt-auto">
-            Sorularınız olursa, aşağıdaki linklerden bana ulaşabilirsiniz.
-          </h3>
-
-          <div className="flex justify-center pt-2">
-            <a className="mx-4 w-12" href="https://twitter.com/ahmetakyapi">
-              <img src="/twitter.png" alt="" />{' '}
-            </a>
-            <a
-              className="mx-4 w-12"
-              href="https://www.instagram.com/ahmetakyapi"
-            >
-              <img src="/instagram.png" alt="" />{' '}
-            </a>
-            <a className="mx-4 w-12" href="https://github.com/ahmetakyapi">
-              <img src="/github.png" alt="" />{' '}
-            </a>
-            <a
-              className="mx-4 w-12"
-              href="https://tr.linkedin.com/in/ahmet-akyap%C4%B1-ba9911193"
-            >
-              <img src="/linkedin.png" alt="" />{' '}
-            </a>
-            <a
-              className="mx-4 w-12"
-              href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlDTckLTCgBcQJfFScTNkNzRlWBTcrPvfQCkJpjkbkhLgqxZwWxwLGBNcdKGPscsZVtfsV"
-            >
-              <img src="/gmail.png" alt="" />{' '}
-            </a>
-          </div>
         </div>
-      </div>
 
-      <div className="site-4xl-container mt-10">
-        <img src="/i-am.jpeg" alt="" />
+        <div className="site-4xl-container mt-7 pl-1">
+          <img src="/i-am.jpeg" alt="" />
+        </div>
+        <h3 className="font-medium mt-5 text-center ">
+          Sorularınız olursa, aşağıdaki linklerden bana ulaşabilirsiniz.
+        </h3>
+        <div className="flex justify-center pt-2 mt-5">
+          <a className="mx-4 w-11" href="https://github.com/ahmetakyapi">
+            <img src="/github.png" alt="" />{' '}
+          </a>
+          <a className="mx-4 w-11" href="https://twitter.com/ahmetakyapi">
+            <img src="/twitter.png" alt="" />{' '}
+          </a>
+          <a className="mx-4 w-11" href="https://linkedin.com/in/ahmetakyapi">
+            <img src="/linkedin.png" alt="" />{' '}
+          </a>
+          <a
+            className="mx-4 w-11"
+            href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlDTckLTCgBcQJfFScTNkNzRlWBTcrPvfQCkJpjkbkhLgqxZwWxwLGBNcdKGPscsZVtfsV"
+          >
+            <img src="/gmail.png" alt="" />{' '}
+          </a>
+        </div>
       </div>
     </>
   )
