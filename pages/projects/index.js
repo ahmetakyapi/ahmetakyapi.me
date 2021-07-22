@@ -149,9 +149,9 @@ function ProjectsPage({ projects }) {
           </h3>
           <div className="focus-content">
             <p className="text-center">
-              Belirli bir parayı, ürünlerin fiyatlarına göre harcayıp, sepet
-              kısmında görüntüleyip, kalan ve harcanan parayı görebildiğimiz
-              sitenin kaynak kodlarına aşağıdan ulaşabilirsiniz.
+              Sabit bir parayı, ana sayfadaki ürünleri sepete ekleyerek, kalan
+              ve harcanan parayı görebildiğimiz sitenin kaynak kodlarına
+              aşağıdan ulaşabilirsiniz.
               <br />{' '}
               <div className="text-center mt-2 text-green-500">
                 <a
