@@ -33,10 +33,7 @@ function HomePage() {
           <a className="mx-4 w-11" href="https://linkedin.com/in/ahmetakyapi">
             <img src="/linkedin.png" alt="" />{' '}
           </a>
-          <a
-            className="mx-4 w-11 "
-            href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlDTckLTCgBcQJfFScTNkNzRlWBTcrPvfQCkJpjkbkhLgqxZwWxwLGBNcdKGPscsZVtfsV"
-          >
+          <a className="mx-4 w-11 " href="mailto:ahmetakyapi@gmail.com">
             <img src="/gmail.png" alt="" />{' '}
           </a>
         </div>
