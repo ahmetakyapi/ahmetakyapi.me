@@ -24,17 +24,33 @@ function HomePage() {
           Sorularınız olursa, aşağıdaki linklerden bana ulaşabilirsiniz.
         </h3>
         <div className="flex justify-center pt-2 mt-5">
-          <a className="mx-4 w-11" href="https://github.com/ahmetakyapi">
-            <img src="/github.png" alt="" />{' '}
+          <a
+            className="mx-4 w-11"
+            href="https://github.com/ahmetakyapi"
+            target="_blank"
+          >
+            <img src="/github.png" alt="github" />{' '}
           </a>
-          <a className="mx-4 w-11" href="https://twitter.com/ahmetakyapi">
-            <img src="/twitter.png" alt="" />{' '}
+          <a
+            className="mx-4 w-11"
+            href="https://twitter.com/ahmetakyapi"
+            target="_blank"
+          >
+            <img src="/twitter.png" alt="twitter" />{' '}
           </a>
-          <a className="mx-4 w-11" href="https://linkedin.com/in/ahmetakyapi">
-            <img src="/linkedin.png" alt="" />{' '}
+          <a
+            className="mx-4 w-11"
+            href="https://linkedin.com/in/ahmetakyapi"
+            target="_blank"
+          >
+            <img src="/linkedin.png" alt="linkedin" />{' '}
           </a>
-          <a className="mx-4 w-11 " href="mailto:ahmetakyapi@gmail.com">
-            <img src="/gmail.png" alt="" />{' '}
+          <a
+            className="mx-4 w-11 "
+            href="mailto:ahmetakyapi@gmail.com"
+            target="_blank"
+          >
+            <img src="/gmail.png" alt="gmail" />{' '}
           </a>
         </div>
       </div>
