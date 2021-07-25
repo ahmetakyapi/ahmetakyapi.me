@@ -22,7 +22,7 @@
         width: 340px;
         height: 330px;
         padding: 0;
-        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+        box-shadow: 0 2px 4px 0 cadetblue;
         border-radius: 8px;
         box-sizing: border-box;
         overflow: hidden;
