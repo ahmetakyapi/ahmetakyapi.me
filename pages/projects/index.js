@@ -7,6 +7,7 @@ function ProjectsPage({ projects }) {
       <div className="flex flex-wrap content-evenly place-content-between">
         <div className="card mt-6 mb-10">
           <img
+            className="pl-6"
             src="projects/ahmetakyapi.me.png"
             alt="tesla-clone-ahmet akyapı"
           />

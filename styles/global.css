@@ -33,11 +33,12 @@
     }
 
     .card img {
-        width: 340px;
+        width: 310px;
         height: 224px;
         object-fit: cover;
         display: block;
         margin-left: 15px;
+        margin-top: 10px;
     }
 
     .card h3 {
