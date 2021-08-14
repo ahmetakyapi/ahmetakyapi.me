@@ -18,7 +18,7 @@ function HomePage() {
         </div>
 
         <div className="site-4xl-container mt-7 pl-1">
-          <img src="/i-am.jpeg" alt="" />
+          <img src="/i-am.jpeg" alt="ahmetakyapi.me" />
         </div>
         <h3 className="font-medium mt-5 text-center ">
           Sorularınız olursa, aşağıdaki linklerden bana ulaşabilirsiniz.
