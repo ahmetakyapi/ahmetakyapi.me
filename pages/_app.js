@@ -1,5 +1,6 @@
 import '../styles/global.css'
 import Header from '../components/header'
+import Head from 'next/head'
 import { Auth0Provider } from '@auth0/auth0-react'
 
 function MyApp({ Component, pageProps }) {
@@ -10,6 +11,10 @@ function MyApp({ Component, pageProps }) {
       redirectUri={process.env.NEXT_PUBLIC_URL}
     >
       <div className="antialiased text-gray-700">
+        <Head>
+          <link rel="shortcut icon" href="/projects/favicon.png" />
+          <title>Ahmet Akyapı</title>
+        </Head>
         <Header />
         <main className="mt-6 mb-20">
           <Component {...pageProps} />

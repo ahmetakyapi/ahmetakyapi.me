@@ -33,17 +33,17 @@ function HomePage() {
           </a>
           <a
             className="mx-4 w-11"
-            href="https://twitter.com/ahmetakyapi"
-            target="_blank"
-          >
-            <img src="/twitter.png" alt="twitter" />{' '}
-          </a>
-          <a
-            className="mx-4 w-11"
             href="https://linkedin.com/in/ahmetakyapi"
             target="_blank"
           >
             <img src="/linkedin.png" alt="linkedin" />{' '}
+          </a>
+          <a
+            className="mx-4 w-11"
+            href="https://twitter.com/ahmetakyapi"
+            target="_blank"
+          >
+            <img src="/twitter.png" alt="" />{' '}
           </a>
           <a
             className="mx-4 w-11 "
